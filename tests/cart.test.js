@@ -17,9 +17,7 @@ describe("removeItem", function () {
 });
 
 describe("getTotalItems", function () {
-  test("Should add an item to the specified cart in the quantity input.", function () {
-    expect(cartTest.addItem(cart, "pants", 2)).toBe(`[
-      { item: "pants", quantity: 2 },
-    ]`);
+  test("Should add total quantities", function () {
+    expect(cartTest.getTotalItems(cart)).toBe(0);
   });
 });

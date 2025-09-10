@@ -14,8 +14,7 @@ function removeItem(cart, item) {
 }
 
 function getTotalItems(cart) {
-  return;
-  cart.reduce(
+  return cart.reduce(
     (total, cartItem) => total + cartItem.quantity,
     0 /*init accumlulator to zero*/
   );
